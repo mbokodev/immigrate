@@ -4,8 +4,10 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import "./globals.css";
 
+const productionUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.lacavalerie-corp.com";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://lacavalerie.com"),
+  metadataBase: new URL(productionUrl),
   title: { default: "La Cavalerie | Études & mobilité internationale", template: "%s | La Cavalerie" },
   description: "Un accompagnement clair et humain pour construire votre projet d’études ou de mobilité vers la Belgique et le Canada.",
   icons: { icon: "/favicon.ico", shortcut: "/favicon.ico" },
