@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://lacavalerie.com"),
   title: { default: "La Cavalerie | Études & mobilité internationale", template: "%s | La Cavalerie" },
   description: "Un accompagnement clair et humain pour construire votre projet d’études ou de mobilité vers la Belgique et le Canada.",
-  icons: { icon: "/favicon.png" },
+  icons: { icon: "/favicon.ico", shortcut: "/favicon.ico" },
   openGraph: {
     type: "website",
     locale: "fr_FR",
