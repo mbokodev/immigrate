@@ -50,3 +50,15 @@
 @keyframes caHeroProgress{0%{transform:scaleX(0)}29%{transform:scaleX(1)}33%,100%{transform:scaleX(0)}}
 @media(max-width:700px){.ca-hero-slides .ca-hero-image{object-position:64% center}.ca-slide-progress{left:22px;bottom:30px}}
 @media(prefers-reduced-motion:reduce){.ca-hero-slides .ca-hero-image,.ca-slide-progress span:after{animation:none}.ca-hero-slides .ca-hero-image:first-child{opacity:1;transform:none}.ca-slide-progress span:first-child:after{transform:scaleX(1)}}
+
+/* Canada partners */
+.ca-partners{position:relative;padding:115px clamp(24px,8vw,135px);display:grid;grid-template-columns:.78fr 1.22fr;gap:clamp(60px,9vw,145px);align-items:center;background:linear-gradient(135deg,#0a2237 0%,#071b2d 58%,#102e47 100%);color:white;overflow:hidden}.ca-partners:before{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(255,255,255,.07);border-radius:50%;right:-180px;top:-250px}.ca-partners-copy{position:relative}.ca-partners h2{font-size:clamp(46px,5.4vw,76px);margin:23px 0 28px}.ca-partners-copy>p:last-child{max-width:470px;color:#aebfca;font-size:15px}.ca-partner-logos{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:18px}.ca-partner-logos article{height:210px;border:1px solid rgba(255,255,255,.14);border-radius:18px;background:rgba(255,255,255,.96);display:grid;place-items:center;padding:34px;box-shadow:0 24px 60px rgba(0,0,0,.18);transition:transform .3s ease,border-color .3s ease}.ca-partner-logos article:hover{transform:translateY(-5px);border-color:rgba(255,180,183,.7)}.ca-partner-logos img{display:block;width:100%;height:100%;object-fit:contain}.ca-partner-logos article:first-child{background:#050607}.ca-partner-logos article:first-child img{max-height:150px}.ca-partner-logos article:last-child img{max-height:76px}
+@media(max-width:900px){.ca-partners{grid-template-columns:1fr;gap:48px}}
+@media(max-width:700px){.ca-partners{padding:82px 22px}.ca-partner-logos{grid-template-columns:1fr}.ca-partner-logos article{height:170px;padding:28px}.ca-partners h2{font-size:45px}}
+
+.ca-partner-logos{grid-template-columns:repeat(3,1fr)}
+.ca-partner-logos article{padding:30px}
+.ca-partner-logos article:nth-child(3){background:#050607}
+.ca-partner-logos article:nth-child(2) img{max-height:76px}
+.ca-partner-logos article:nth-child(3) img{max-height:132px}
+@media(max-width:700px){.ca-partner-logos{grid-template-columns:1fr;gap:20px}.ca-partner-logos article{height:250px;padding:30px}.ca-partner-logos article:first-child img{max-height:195px}.ca-partner-logos article:nth-child(2) img{max-height:105px}.ca-partner-logos article:nth-child(3) img{max-height:185px}}
