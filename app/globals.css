@@ -62,3 +62,8 @@
 .ca-partner-logos article:nth-child(2) img{max-height:76px}
 .ca-partner-logos article:nth-child(3) img{max-height:132px}
 @media(max-width:700px){.ca-partner-logos{grid-template-columns:1fr;gap:20px}.ca-partner-logos article{height:250px;padding:30px}.ca-partner-logos article:first-child img{max-height:195px}.ca-partner-logos article:nth-child(2) img{max-height:105px}.ca-partner-logos article:nth-child(3) img{max-height:185px}}
+
+.ca-dream-track{display:flex;width:max-content;min-width:100%}.ca-dream-track p{flex:none;width:100vw}.ca-dream-track p+ p{display:none}
+@media(max-width:700px){.ca-dream-line{padding:18px 0}.ca-dream-track{min-width:0;animation:caDreamMarquee 18s linear infinite}.ca-dream-track p{width:auto;text-align:left!important;transform:none!important;padding-right:18px}.ca-dream-track p+ p{display:block}}
+@keyframes caDreamMarquee{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.ca-dream-track{animation-play-state:paused}}
